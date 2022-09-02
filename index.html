@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- metadata and links to supplementary files -->
+<head>
+    <title>HTML, CSS, and JS To Do List</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src='functions.js'></script>
+</head>
+
+<html>
+    <body>
+        <main>
+            <!-- A header with an input and button for adding to do items  -->
+            <div class="header">
+                <h2>To dos</h2>
+                <input type="text" id="todoInput" placeholder="enter your to dos!">
+                <span onclick="newTodo()" class="button">add</span>
+            </div>
+            <!-- An unordered list for to dos -->
+            <ul id="todos">
+            </ul>
+            <!-- A button for deleting finished to dos -->
+            <div class="buttonDiv">
+                <span onclick="deleteDone()" class="button">delete finished todos</span>
+            </div>
+        </main>
+        
+    </body>
+</html>
